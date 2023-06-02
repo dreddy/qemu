@@ -83,6 +83,7 @@ bool x86_cpu_tlb_fill(CPUState *cs, vaddr address, int size,
 G_NORETURN void x86_cpu_do_unaligned_access(CPUState *cs, vaddr vaddr,
                                             MMUAccessType access_type,
                                             int mmu_idx, uintptr_t retaddr);
+vaddr x86_cpu_clean_addr(CPUState *cpu, vaddr addr);
 #endif
 
 /* cc_helper.c */
